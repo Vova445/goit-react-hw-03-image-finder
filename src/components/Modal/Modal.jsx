@@ -15,9 +15,10 @@ const Modal = ({ isOpen, image, onClose }) => {
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [onClose]);
+  const overlayClassName = `${styles.Overlay} ${isOpen ? styles.visible : ''}`;
 
   return (
-    <div className={`${styles.Overlay} ${isOpen ? styles.visible : ''}`} onClick={onClose}>
+    <div className={overlayClassName} onClick={onClose}>
       <div className={styles.Modal}>
         <img src={image} alt="" />
       </div>
