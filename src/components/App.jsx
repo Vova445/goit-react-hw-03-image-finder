@@ -84,7 +84,7 @@ export class App extends Component {
   };
 
   render() {
-    const { query, images, isLoading, showModal, modalImage } = this.state;
+    const { images, isLoading, showModal, modalImage } = this.state;
 
     return (
       <div className={styles.App}>
